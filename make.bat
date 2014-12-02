@@ -73,7 +73,13 @@ xcopy lib build\lib /e
 :: Make Images Folder
 ::
 mkdir build\images
-copy images\* build\images
+xcopy images build\images /e
+
+::
+:: Make CSS Folder
+::
+mkdir build\style
+xcopy style build\style /e
 
 ::
 :: Copy defaults and other data
